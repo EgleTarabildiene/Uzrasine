@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-header">Žinučiu sarasas</div>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <div style="background-color: rgba(255, 238, 0, 0.747); border: 2px solid rgb(255, 196, 0)" class="row mb-3" *ngFor="let item of orders; let i =index">
+                <div class="col-md-6">{{ i+1}}. {{item.name}}</div>
+                <div class="col-md-4">
+                    <button class="btn btn-danger btn-sm" (click)="deleteItem(i)">Ištrinti</button>
+                </div>
+
+            </div>
+
+        </li>
+    </ul>
+</div>
